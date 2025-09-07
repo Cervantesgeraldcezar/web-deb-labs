@@ -108,7 +108,7 @@ iframe {
 }
 
 .custom-link {
-  text-decoration: none;
+  text-decoration:dashed;
   color: #ffffff;
   transition: color 0.3s ease;
 }
