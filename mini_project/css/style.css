@@ -1,114 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: #fff;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa;
-  color: #333;
+body.index-page {
+  background: url("https://i.pinimg.com/1200x/3a/7a/8c/3a7a8cb29509c88993c4415828253506.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.naruto-page {
+  background: url("https://i.pinimg.com/736x/e6/08/c7/e608c7778671a3b96497f6e9ade72968.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.onepiece-page {
+  background: url("https://i.pinimg.com/736x/18/8c/37/188c374678c4f720c7e2a18feeded4bf.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.attack_on_titan-page {
+  background: url("https://i.pinimg.com/736x/8f/f7/65/8ff765257f68f17c306b6afeb7c1e90c.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.demonslayer-page {
+  background: url("https://i.pinimg.com/736x/cf/41/37/cf4137e379ed6459c48e8b1ab0814085.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.deathnote-page {
+  background: url("https://i.pinimg.com/736x/ef/43/a3/ef43a34c853347b28483c4e304f05dea.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.bleach-page {
+  background: url("https://i.pinimg.com/736x/00/3e/d9/003ed98cf7a711b4e17d4362bdcb2c03.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.myheroacademia-page {
+  background: url("https://i.pinimg.com/736x/24/82/17/2482171683267f1002f7a5c3004f5927.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.tokyoghoul-page {
+  background: url("https://i.pinimg.com/1200x/db/73/22/db7322d2b5c8e812856d89079412937a.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.credits-page {
+  background: url("https://i.pinimg.com/1200x/3a/7a/8c/3a7a8cb29509c88993c4415828253506.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 header {
-  background: #1e3c72;
-  color: #fff;
-  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 header h1 {
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 2.5rem;
+  color: #ffd700;
 }
 
 nav ul {
   list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 8px 15px;
 }
 
 nav ul li a {
-  text-decoration:wavy;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: background 0.3s;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  background: #ff9800;
-  color: #fff;
+  color: #ff4500;
 }
 
 main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 main h2 {
+  color: #ffd700;
+  margin-top: 0;
+}
+
+main p {
+  font-size: 1.05rem;
   margin-bottom: 15px;
-  color: #1e3c72;
 }
 
-article p {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-
-article img {
+main img {
   display: block;
   max-width: 100%;
-  height: auto;
   margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  box-shadow: 0 0 12px #000;
 }
 
 footer {
-  background: #1e3c72;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
   text-align: center;
   padding: 15px;
-  margin-top: 40px;
-  position: relative;
+  margin-top: 20px;
+  font-size: 0.9rem;
 }
 
 footer p {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-.back-to-top {
-  display: inline-block;
-  background: #ff9800;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
+footer .back-to-top {
+  display: block;
+  margin-top: 8px;
+  color: #ffd700;
   text-decoration: none;
-  transition: background 0.3s;
+  font-weight: bold;
 }
 
-.back-to-top:hover {
-  background: #e67e22;
+footer .back-to-top:hover {
+  color: #ff4500;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
-  }
+details {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  main {
-    margin: 20px auto;
-  }
+details summary {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+details[open] {
+  background: rgba(255, 255, 255, 0.2);
 }
