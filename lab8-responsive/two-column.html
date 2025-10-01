@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Two-Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: url(https://i.pinimg.com/736x/5a/c8/32/5ac832f8db37bd5dfed4eb7b0217bab9.jpg);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; 
+      gap: 20px;
+      align-items: center;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+      background: #ba5f5f;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .image {
+      flex: 1;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Two-Column Layout Example</h1>
+
+  <div class="container">
+    <div class="text">
+      <h2>Responsive Design</h2>
+      <p>
+        Example of a flexible two-column layout. 
+        On small screens, the text and the image will stack vertically. 
+        On larger screens, they are displayed side by side by using Flexbox.
+      </p>
+      <p>
+        Resize the browser window to see how the layout changes.
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="https://i.pinimg.com/736x/db/83/81/db8381fcbbbf886acdf3071e7c1f3bbb.jpg" alt="Sample Image">
+    </div>
+  </div>
+
+</body>
+</html>
