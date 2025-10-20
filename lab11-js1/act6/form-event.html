@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event Activity</title>
+</head>
+<body>
+    <h2>Activity 6: Visual Wireframe to Code</h2>
+
+    <!-- Step 1: Name field and button -->
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your name here">
+
+    <button id="submitBtn">Submit</button>
+
+    <script>
+        // Step 2: Show alert when button is clicked
+        document.getElementById("submitBtn").onclick = function() {
+            let name = document.getElementById("name").value;
+            alert("Thank you, " + name + "!");
+        };
+    </script>
+</body>
+</html>
