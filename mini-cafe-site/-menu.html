@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f6f1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6b3e26;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 20px;
+        }
+        .menu-item {
+            background-color: rgb(219, 153, 71);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-content {
+            padding: 15px;
+        }
+        .menu-content h3 {
+            margin: 0;
+            color: #4a2c19;
+        }
+        .menu-content p {
+            color: #555;
+        }
+        .price {
+            color: #b7410e;
+            font-weight: bold;
+        }
+        button {
+            background-color: #b7410e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #8c2e07;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Caffeine Aroma Café Menu</h1>
+    </header>
+
+    <section class="menu-container">
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/54/1f/03/541f030a0d2fc2b9559c796efdb82774.jpg" alt="Cappuccino">
+            <div class="menu-content">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with steamed milk and foam.</p>
+                <p class="price">₱90 to ₱120 - ₱120 to ₱250</p>
+                <button onclick="orderItem('Cappuccino')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/74/eb/11/74eb11bfe223256ca55aeea7c65642f7.jpg" alt="Green Tea">
+            <div class="menu-content">
+                <h3>Green Tea</h3>
+                <p>Refreshing hot tea with a smooth flavor.</p>
+                <p class="price">₱80 to ₱150</p>
+                <button onclick="orderItem('Green Tea')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/55/f8/7b/55f87b082c2e6f655957e29725e8a0d8.jpg" alt="Latte">
+            <div class="menu-content">
+                <h3>Latte</h3>
+                <p>Espresso with steamed milk, smooth and creamy.</p>
+                <p class="price">₱115 to ₱200</p>
+                <button onclick="orderItem('Latte')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/06/70/69/06706942e884ba28a949a099f9c144d1.jpg" alt="Herbal Tea">
+            <div class="menu-content">
+                <h3>Herbal Tea</h3>
+                <p>Relaxing blend of chamomile and herbs.</p>
+                <p class="price">₱150 to ₱250</p>
+                <button onclick="orderItem('Herbal Tea')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/af/d1/64/afd164b68134848ef18ce88a8464dd22.jpg" alt="Blueberry Muffin">
+            <div class="menu-content">
+                <h3>Blueberry Muffin</h3>
+                <p>Freshly baked muffin filled with blueberries.</p>
+                <p class="price">₱98 to ₱160</p>
+                <button onclick="orderItem('Blueberry Muffin')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/c9/f0/14/c9f014e078ff2fa631afdba375d13eb1.jpg" alt="Croissant">
+            <div class="menu-content">
+                <h3>Croissant</h3>
+                <p>Buttery and flaky French pastry.</p>
+                <p class="price">₱60 and ₱150</p>
+                <button onclick="orderItem('Croissant')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function orderItem(item) {
+            alert("You ordered " + item + "!");
+        }
+    </script>
+</body>
+</html>
