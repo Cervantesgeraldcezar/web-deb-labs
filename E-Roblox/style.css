@@ -169,6 +169,10 @@ body.about-page{
       background: url('images/image2.png') no-repeat center center/cover;
 }
 
+body.module-list{
+  background: url("images/image4.png")no-repeat center center/cover;
+}
+
 /* ===== CURRICULUM ALIGNMENT ===== */
 
 .content-wrapper {
