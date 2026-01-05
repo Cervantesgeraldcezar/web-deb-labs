@@ -145,7 +145,7 @@ button {
   background: #f4f7ff;
   padding: 20px;
   border-radius: 10px;
-  text-decoration: none;
+  text-decoration:#0b5cff;
   color: black;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   transition: 0.2s;
@@ -169,7 +169,7 @@ body.about-page{
       background: url('images/image2.png') no-repeat center center/cover;
 }
 
-body.module-list{
+body.modules-page{
   background: url("images/image4.png")no-repeat center center/cover;
 }
 
@@ -179,7 +179,7 @@ body.module-list{
   display: flex;
   justify-content: center;
   padding: 40px 20px;
-  background: #f4f6f9;
+  background: url("images/image2.png") no-repeat center center/cover;
   min-height: 100vh;
 }
 
@@ -248,4 +248,28 @@ body.module-list{
 .about-list li {
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+.modules-page {
+  color: #0a1f44;
+  text-shadow: 1px 1px 4px rgba(255,255,255,0.4);
+}
+
+.module-container {
+  background: rgba(0,0,0,0.45);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.modules-page .btn {
+  color: white !important;
+}
+
+.modules-page h1 {
+  color: black !important;
+}
+
+.modules-page {
+  color: white;
 }
